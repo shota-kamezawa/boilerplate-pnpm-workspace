@@ -1,0 +1,160 @@
+{
+  "lsp": {
+    "oxlint": {
+      "initialization_options": {
+        "settings": {
+          "configPath": null,
+          "disableNestedConfig": false,
+          "fixKind": "safe_fix",
+          "run": "onType",
+          "unusedDisableDirectives": "deny"
+        }
+      }
+    },
+    "oxfmt": {
+      "initialization_options": {
+        "settings": {
+          "fmt.configPath": null,
+          "run": "onSave"
+        }
+      }
+    },
+    "stylelint-lsp": {
+      "settings": {
+        "stylelint": {
+          "packageManager": "pnpm",
+          "validate": ["css", "postcss", "vue.js"]
+        }
+      }
+    }
+  },
+  "languages": {
+    "Angular": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "Astro": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "CSS": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.stylelint" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "GraphQL": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Handlebars": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "HTML": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSON5": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Less": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "MDX": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "SCSS": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.stylelint" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "Svelte": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "TOML": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "Vue.js": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.oxc" },
+        { "language_server": { "name": "oxfmt" } }
+      ],
+      "prettier": { "allowed": false }
+    },
+    "YAML": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "extends": [],
+  "plugins": [
+    "eslint",
+    "typescript",
+    "unicorn",
+    "react",
+    "react-perf",
+    "nextjs",
+    "oxc",
+    "import",
+    "jsdoc",
+    "jsx-a11y",
+    "node",
+    "promise",
+    // "jest",
+    "vitest",
+    "vue"
+  ],
+  "jsPlugins": [],
+  "options": {
+    "reportUnusedDisableDirectives": "error",
+    "typeAware": true,
+    "typeCheck": true
+  },
+  "env": {},
+  "globals": {},
+  "settings": {},
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "off",
+    "perf": "warn",
+    "style": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "rules": {},
+  "overrides": [],
+  "ignorePatterns": []
+}

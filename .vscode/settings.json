@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "always",
+    "source.fixAll.oxc": "always",
+    "source.format.oxc": "always"
+  },
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": false,
+  "oxc.configPath": null,
+  "oxc.fmt.configPath": ".oxfmtrc.json",
+  "eslint.enable": false,
+  "prettier.enable": false,
+  "stylelint.validate": ["css", "postcss", "scss"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
+}
