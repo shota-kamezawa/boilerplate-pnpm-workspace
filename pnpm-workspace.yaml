@@ -1,0 +1,9 @@
+# allowBuilds:
+minimumReleaseAge: 1440 # 60 * 24 = 1 day
+minimumReleaseAgeStrict: true
+registries:
+  default: "https://registry.npmjs.org/"
+  "@shota-kamezawa": "https://npm.pkg.github.com/"
+savePrefix: ""
+shellEmulator: true
+trustPolicy: "no-downgrade"

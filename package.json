@@ -1,0 +1,26 @@
+{
+  "name": "boilerplate-pnpm-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "author": "shota-kamezawa",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.6.0",
+      "onFail": "error"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "26.3.0",
+      "onFail": "error"
+    }
+  }
+}
