@@ -13,6 +13,7 @@
     "lint:css": "stylelint \"**/*.{css,scss}\" --ignore-path .gitignore",
     "lint:format": "oxfmt --check",
     "lint:js": "oxlint",
+    "lint:licenses": "node ./scripts/check-licenses.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

@@ -19,7 +19,24 @@ defaults:
 permissions: {}
 
 jobs:
+  lint-licenses:
+    permissions:
+      contents: read # actions/checkout
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 #v6.0.3
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/setup@5d160c5bc68a09337ad0d5654e237e03253b5879 # v1.0.0
+        with:
+          cache: true
+
+      - run: pnpm run lint:licenses
+
   lint-css:
+    needs: lint-licenses
     permissions:
       contents: read # actions/checkout
     runs-on: ubuntu-latest
@@ -36,6 +53,7 @@ jobs:
       - run: pnpm run lint:css
 
   lint-format:
+    needs: lint-licenses
     permissions:
       contents: read # actions/checkout
     runs-on: ubuntu-latest
@@ -52,6 +70,7 @@ jobs:
       - run: pnpm run lint:format
 
   lint-js:
+    needs: lint-licenses
     permissions:
       contents: read # actions/checkout
     runs-on: ubuntu-latest
