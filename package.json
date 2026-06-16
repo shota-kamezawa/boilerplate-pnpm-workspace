@@ -11,6 +11,7 @@
   "scripts": {
     "format": "oxfmt",
     "lint:css": "stylelint \"**/*.{css,scss}\" --ignore-path .gitignore",
+    "lint:format": "oxfmt --check",
     "lint:js": "oxlint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
